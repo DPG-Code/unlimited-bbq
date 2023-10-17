@@ -1,0 +1,39 @@
+---
+import Navbar from './navbar/Navbar.astro'
+import Cursor from './items/Cursor.astro'
+import NavbarMobile from './navbar/NavbarMobile.astro'
+---
+
+<div
+  id='inicio'
+  class='p-12 w-full h-screen min-h-[720px] relative flex flex-col items-center justify-center gap-6 xl:px-36 xl:gap-12 2xl:gap-20'
+>
+  <img
+    class='z-30 w-48 h-auto hidden sm:flex 2xl:w-60'
+    src='/logo.webp'
+    alt='Logo'
+  />
+  <Navbar />
+  <NavbarMobile />
+  <h1
+    class='z-30 text-5xl text-center font-extrabold text-[#F0C000] xl:text-6xl 2xl:text-8xl'
+  >
+    ¡AQUI NO EXISTEN LOS<br />LIMITES!
+  </h1>
+  <button
+    id='open'
+    class='z-30 px-4 py-2 bg-[#F0C000] rounded-full text-xs text-black font-semibold xl:px-12 xl:py-3 xl:text-lg 2xl:px-16 2xl:py-4 2xl:text-2xl'
+    >RESERVA YA</button
+  >
+  <img
+    class='z-0 m-auto absolute w-full h-full object-cover'
+    src='/background.webp'
+    alt='steak'
+  />
+  <Cursor />
+  <div
+    class='z-20 m-auto bottom-0 absolute w-full h-2/4 bg-gradient-to-t from-black to-transparent'
+  >
+  </div>
+  <div class='z-10 m-auto absolute w-full h-full bg-black opacity-50'></div>
+</div>

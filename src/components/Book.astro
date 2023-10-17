@@ -1,0 +1,66 @@
+<div
+  id='reservar'
+  class='z-100 w-full h-full min-h-[600px] fixed flex flex-col items-center justify-around bg-black'
+>
+  <button
+    id='close'
+    class='m-0 w-8 h-8 bg-neutral-700 hover:bg-primal-color rounded-full text-black font-medium absolute top-10 right-10 lg:w-12 lg:h-12 lg:text-xl'
+    ><i class='fas fa-times'></i></button
+  >
+  <img class='m-0 w-28 h-auto sm:w-40 xl:w-60' src='/logo.webp' alt='logo' />
+  <form action='' class='m-0 w-9/12 h-auto flex flex-col'>
+    <div class='w-full h-auto flex flex-col'>
+      <label
+        class='mx-0 text-white text-xl sm:text-lg xl:text-2xl xl:mt-6'
+        for='fecha'><p>Fecha</p></label
+      >
+      <input
+        class='mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white xl:text-2xl xl:px-3 xl:py-2'
+        type='datetime-local'
+        id='fecha'
+        name='fecha'
+        required
+      />
+
+      <label
+        class='mx-0 mt-4 text-white text-xl sm:text-lg xl:text-2xl xl:mt-6'
+        for='nombre'><p>Nombre</p></label
+      >
+      <input
+        class='mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white xl:text-2xl xl:px-3 xl:py-2'
+        type='text'
+        id='nombre'
+        name='nombre'
+        required
+      />
+
+      <label
+        class='mx-0 mt-4 text-white text-xl sm:text-lg xl:text-2xl xl:mt-6'
+        for='personas'><p>Cantidad de personas</p></label
+      >
+      <input
+        class='mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white xl:text-2xl xl:px-3 xl:py-2'
+        type='number'
+        id='personas'
+        name='personas'
+        required
+      />
+
+      <label
+        class='mx-0 mt-4 text-white text-xl sm:text-lg xl:text-2xl xl:mt-6'
+        for='tel'><p>Numero de Contacto</p></label
+      >
+      <input
+        class='mx-auto mt-2 px-2 py-1 w-full h-auto bg-neutral-700 rounded-xl text-white xl:text-2xl xl:px-3 xl:py-2'
+        type='tel'
+        id='tel'
+        name='tel'
+        required
+      />
+    </div>
+  </form>
+  <button
+    class='m-0 w-auto h-auto px-4 py-2 bg-white hover:bg-primal-color rounded-xl text-black font-medium xl:text-2xl xl:px-6 xl:py-3 xl:rounded-2xl'
+    type='submit'>RESERVAR</button
+  >
+</div>

@@ -1,0 +1,43 @@
+---
+import Intagram from './icons/Intagram.astro'
+import Facebook from './icons/Facebook.astro'
+import Tiktok from './icons/Tiktok.astro'
+---
+
+<footer
+  class='p-16 w-full flex flex-col bg-neutral-900 gap-6 xl:p-24 xl:gap-12 2xl:p-36'
+>
+  <section
+    class='w-full h-full flex items-center justify-center gap-2 xl:gap-6'
+  >
+    <a
+      class='text-neutral-400 hover:text-white transition'
+      href='https://www.instagram.com/unlimited_bbq/'
+      target='_blank'
+    >
+      <Intagram />
+    </a>
+    <a
+      class='text-neutral-400 hover:text-white transition'
+      href='https://www.facebook.com/Unlimited-BBQ-101740038843838/'
+      target='_blank'
+    >
+      <Facebook />
+    </a>
+    <a
+      class='text-neutral-400 hover:text-white transition'
+      href='https://www.tiktok.com/@unlimited_bbq_col'
+      target='_blank'
+    >
+      <Tiktok />
+    </a>
+  </section>
+  <div
+    class='w-full h-full flex flex-col items-center justify-center gap-4 xl:gap-10'
+  >
+    <img class='w-32 h-auto xl:w-56' src='/logo-white.webp' alt='footer logo' />
+    <p class='text-sm font-medium text-neutral-500 xl:text-2xl'>
+      Copyright &#169; 2021 - Privacy Policy
+    </p>
+  </div>
+</footer>
