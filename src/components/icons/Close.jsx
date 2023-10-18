@@ -1,7 +1,7 @@
 export default function Close() {
   return (
     <svg
-      className='w-8 h-8'
+      className='w-8 h-8 xl:w-12 xl:h-12'
       viewBox='0 0 24 24'
       strokeWidth='1.5'
       stroke='currentColor'
